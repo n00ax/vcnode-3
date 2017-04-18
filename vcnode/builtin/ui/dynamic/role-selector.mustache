@@ -1,0 +1,55 @@
+<html>
+    <meta charset="utf-8"> 
+    <head>
+        <title>Welcome!</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="frontend-scripts/role-selector-frontend.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Welcome, Bienvenido, 欢迎</h1>
+            <p>It looks as though this client has yet to be configured.</p> 
+        </div>
+        <div class="col-sm-4 text-center" id="id-box">
+            <div class="well">
+                <h3>Random ID Generated</h3>
+                <p>The Following Random ID Has Been Generated For This Device</p>
+                <h1 id="random-id"> {{newRandomID}} </h1>
+                <br>
+                <button type="button" class="btn btn-primary btn-block" id="id_box_next">
+                    Next
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-4 text-center invisible" id="role-box">
+            <div class="well">
+                <h3>Select Desired Role</h3>
+                <p>The Following Roles Are Available For This Device</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item" id="dashboard-selected-button">Dashboard</a>
+                    <a href="#" class="list-group-item" id="seatback-selected-button">Seatback</a>
+                    <a href="#" class="list-group-item" id="centerconsole-selected-button">Center Console</a>
+                </div>
+                <br>
+                <button type="button" class="btn btn-primary btn-block" id="role-selector-box-next">
+                    Next
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-4 text-center invisible" id="finish-box">
+            <div class="well">
+                <h3>Congratulgations!</h3>
+                <p>Would You Like To Proceed With The Following Configuration</p>
+                <h1> {{newRandomID}} </h1>
+                <h1 id="selected-role">noRole?</h1> 
+                <br>          
+                <button type="button" class="btn btn-primary btn-block" id="finish-box-next">
+                    Finish
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

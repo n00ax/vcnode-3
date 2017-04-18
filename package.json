@@ -1,0 +1,23 @@
+{
+  "name": "vcnodev2",
+  "version": "1.0.0",
+  "description": "VcNODE, Enhanced V2",
+  "main": "vcnode/init/init.js",
+  "scripts": {
+    "test": "node vcnode/init/init.js"
+  },
+  "keywords": [
+    "vcnode"
+  ],
+  "author": "n00ax, nwhiteis",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4",
+    "sync-request": "^4.0.2"
+  }
+}
